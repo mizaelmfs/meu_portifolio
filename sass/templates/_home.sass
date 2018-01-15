@@ -1,0 +1,46 @@
+body
+    background: $grey-light
+    .content
+        padding: 10px
+    .layout
+        margin: 16px auto
+        max-width: 1400px
+        +clearfix
+        .left
+            +make-sm-column(4)
+            +make-xs-column(12)
+            +breakpoint($tablet)
+                padding: 0 8px 8px 8px
+            .left-body
+                background-color: $white
+                width: 100%
+                padding-bottom: 20px
+                box-shadow: 0 4px 20px 0 rgba($black, 0.19)
+            .address
+                padding: 0 10px
+                width: 100%
+                &:after
+                    margin: 30px auto
+                    width: 90%
+                    border: 0.8px solid $grey-light
+
+        .right-top-body,
+        .right-bottom-body
+            padding: 0 25px 
+            width: 100%
+            background-color: $white
+            box-shadow: 0 4px 20px 0 rgba($black,0.19)
+        
+        .right-top,
+        .right-bottom
+            +make-sm-column(8)
+            +make-xs-column(12)
+          
+        .right-top
+            padding: 0 8px 8px 8px
+            .right-top-body
+               
+        .right-bottom
+            padding: 0 8px
+            .right-bottom-body
+                

@@ -1,0 +1,37 @@
+.skills-layout
+    padding: 0 10px
+    width: 100%
+    .icon-custom
+        margin: 30px 0 0 10px !important
+    .skills
+        padding: 0 10px
+        p
+            color: $grey-regular
+            font-weight: $light
+            margin: 15px 0 10px 0  
+        @for $i from 0 through 10
+            .l-#{$i}
+                .level
+                    width: 10% * $i !important  
+        .skill
+            width: 100%
+            background-color: $grey-light
+            +border-radius(16px)
+            color: $white
+            +font-size(12px)
+            .level
+                text-align: center
+                +gradient(90deg, $green, $green-strong)
+
+        .skill,
+        .level
+            display: block
+            height: 17px
+            +border-radius(16px)
+
+    .skills-linguages
+        .skill,
+        .level
+            display: block
+            height: 20px
+            +border-radius(16px)
